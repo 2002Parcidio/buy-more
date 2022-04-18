@@ -8,32 +8,18 @@ import Apoio from './components/pages/Apoio';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar';
 
-function App() {
+export default function App() {
   return (
     
-     <Router>
-    <NavBar />
-
+    <BrowserRouter>
     <Routes>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/vender">
-        <Vender />
-      </Route>
-      <Route path="/comprar">
-        <Comprar />
-      </Route>
-      <Route path="/netflix">
-        <Netflix />
-      </Route>
-      <Route path="/apoio">
-        <Apoio />
+      <Route path="/" element={<NavBar />}>
+        <Route index element={<Home />} />
+        <Route path="vender" element={<Vender />} />
+        <Route path="comprar" element={<Comprar />} />
+        <Route path="netflix" element={<Netflix />} />
       </Route>
     </Routes>
-    </Router>
-  
+  </BrowserRouter>
   );
 }
-
-export default App;
