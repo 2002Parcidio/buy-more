@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/*header*/
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui;
+    height: 5vh;
+    background: #23232e;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.link-header {
+  list-style: none;
+  display: flex;
+}
+
+.link-header li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 36px;
+}
+
+.App-header p, a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s; 
+}
+
+.active {
+  color: antiquewhite;
+}
+
+/* Seccao venda-home e compra-home */
+.vendas-home, .compras-home{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 30%;
+  margin-right: 30%;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+  text-align: center;
+  color: #23232e;
 }

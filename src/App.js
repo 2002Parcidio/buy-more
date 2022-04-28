@@ -1,25 +1,27 @@
-import * as React from 'react';
+
 import './App.css';
 import Home from './components/pages/Home';
 import Vender from './components/pages/Vender';
 import Comprar from './components/pages/Comprar';
-import Netflix from './components/pages/Netflix';
 import Apoio from './components/pages/Apoio';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import NavBar from './components/NavBar';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function App() {
   return (
-    
-    <BrowserRouter>
+    <div className='App'>
+    <Router>
     <Routes>
-      <Route path="/" element={<NavBar />}>
-        <Route index element={<Home />} />
-        <Route path="vender" element={<Vender />} />
-        <Route path="comprar" element={<Comprar />} />
-        <Route path="netflix" element={<Netflix />} />
-      </Route>
+        <Route exact path='/' element={<Home />}></Route>
+        <Route path='/vender' element={<Vender />}></Route>
+        <Route path='/comprar' element={<Comprar />}></Route>
+        <Route path='/apoio' element={<Apoio />}></Route>
+      
     </Routes>
-  </BrowserRouter>
+    </Router>
+    </div>
+  
   );
 }
+
