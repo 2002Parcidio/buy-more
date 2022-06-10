@@ -8,8 +8,15 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui;
-    height: 5vh;
-    background: #23232e;
+    height: 10vh;
+    
+    width: 100%;
+    position: fixed;
+    
+    
+}
+.App-header-bg{
+  background: #696969;
 }
 
 .logo {
@@ -36,8 +43,150 @@
 }
 
 .active {
-  color: antiquewhite;
+  color: #00FFFF;
 }
+.mobile-menu-icon {
+    display: none;
+
+}
+.container{
+  display: block;
+  
+
+}
+
+.Produto{
+  display: none;
+
+}
+
+.email-config1 {
+  display: none;
+}
+
+.email-config2 {
+  display: none;
+}
+
+.Category1{
+  display: none;
+}
+
+.flex{
+  display: flex;
+}
+
+
+@media screen and (min-width:780px) and (max-width: 1200px) {
+
+  #email-config {
+    display: none;
+  }
+  
+  .email-config1 {
+    display: block;
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 780px){
+
+  .App-header{
+    height: 10vh;
+  }
+
+  .logo{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+
+  .link-header {
+    display: none;
+  }
+
+  .link-header-mobile{
+    margin-top: 30px;
+    height: 280px;
+    position: absolute;
+    display: block;
+    list-style: none;
+    align-items: center;
+    top: 15px;
+    background-color: #696969;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .link-header-mobile li{
+    color: #00FFFF;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    transition: all 5.5s ease;
+    
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    font-size: 25px;
+    color: #00FFFF;
+    background-color: #696969;
+    border: none;
+    outline: none;
+    top: 10px;
+    right: 25px;
+  }
+
+  .d-block{
+    height: 150px;
+  }
+  
+  .container{
+    display: none;
+  }
+  
+  .Produto{
+    display: block;
+    margin-left: 25%;
+  }
+
+
+  #email-config {
+    display: none;
+  }
+  
+  .email-config1 {
+    display: none;
+  }
+
+  .email-config2 {
+    display: block;
+    margin-left: 5%;
+  
+  }
+
+  .Category1{
+    display: block;
+    margin-left: 25%;
+  }
+  .flex{
+    display: flex;
+  }
+ 
+  
+}
+
+
 
 /* Seccao venda-home e compra-home */
 .vendas-home, .compras-home{
@@ -47,5 +196,5 @@
 }
 h2{
   text-align: center;
-  color: #23232e;
+  color: #696969;
 }
