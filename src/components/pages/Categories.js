@@ -5,7 +5,7 @@ const Categories = [
     category:'programadores',
     titulo:'Programador Web',
     descrição:'Olá, eu sou o Parcídio Pascoal, sou um programdor web a nível intermédio.',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
 },
 
 // Arquitetos
@@ -15,7 +15,17 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
+},
+
+// Designers
+{
+    id: 2,
+    category:'designer',
+    titulo:'Designer Gráfico',
+    descrição:'Olá, eu sou o Estefânio Casemiro, sou um designer gráfico a nível intermédio.',
+    valor:'233',
+    img1:require('./Img/services/designer-grafico-estef.jpg'),
 },
 
 // Contabilistas
@@ -24,7 +34,7 @@ const Categories = [
     category:'contabilistas',
     titulo:'Contabilista',
     descrição:'Olá, eu sou o Parcídio Pascoal, sou um contabilista a nível intermédio.',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/contabilidade-kleber-dos-Santos1.jpg'),
 },
 
 // Electrecistas
@@ -34,7 +44,7 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg')
+    img1:require('./Img/services/programador-parcidio.jpg')
 },
 
 // Mecanicos
@@ -44,17 +54,17 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
 },
 
 // canalizadores
 {
     id: 6,
     category:'canalizadores',
-    titulo:'desk',
+    titulo:'Técnico de frio',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg')
+    img1:require('./Img/services/tecnico-de-frio-Delio-Andre1.jpg')
 },
 
 // Pintores
@@ -64,7 +74,7 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
 },
 
 // Empreteiros
@@ -74,7 +84,7 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
 },
 
 // Pedreiros
@@ -84,17 +94,17 @@ const Categories = [
     titulo:'desk',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/programador-parcidio.jpg'),
 },
 
 // Outros
 {
     id: 10,
     category:'outros',
-    titulo:'desk',
+    titulo:'baba',
     descrição:'shkjdkjfgkhfd',
     valor:'233',
-    img1:require('./Img/IMG-20220424-WA0009.jpg'),
+    img1:require('./Img/services/baba-adelaide1.jpg'),
 },
 
 

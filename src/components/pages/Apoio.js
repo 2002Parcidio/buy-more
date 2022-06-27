@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
-import Category from './Category';
+import CondiçõesMesc from './CondiçõesMesc'
+import MescVoz from './MescVoz';
 
 
 function Apoio() {
@@ -31,6 +32,7 @@ function Apoio() {
                         <li><Link to={'/comprar'}>Comprar</Link></li>
                         <li><Link to={'/servicos'}>Serviços</Link></li>
                         <li><Link to={'/apoio'} className='active'>Apoio</Link></li>
+                        <li><Link to={'/carrinho'}><i class='fas fa-shopping-cart' /></Link></li>
                     </div>
                     <button className='mobile-menu-icon' onClick={() => setIsMobile(!isMobile)}>
                           {isMobile ?
@@ -39,20 +41,29 @@ function Apoio() {
                           )}
                     </button>
             </div>
-
+            <br />
+            <br />
             <img
               className="d-block w-100"
-              src={ require('./Img/Novo-Projeto.png')}
+              src={ require('./Img/apoioimg.jpg')}
               alt="First slide"
             />
            
             <h2>Apoio ao cliente</h2>
+            <CondiçõesMesc />
+            <div className='' style={{display:'block', textAlign:'center'}}>
+      
+            </div>
+            <div className='shopcart' style={{marginTop:'2%', marginBottom:'1%'}}>
+              <Link to={'/carrinho'}><i class='fas fa-shopping-cart' style={{color:'#696969', position:'fixed', float:'right', fontSize:'40px'}}/></Link>
+            </div>
+
 
             <section className='footer' style={{background:'#696969', padding:'40px 0', height:'245px'}}>
               <div className='social' style={{textAlign:'center', paddingBottom:'25px', color:'antiquewhite'}}>
-                <a href='#'><i className='fab fa-instagram' style={{color:'antiquewhite', fontSize:'30px'}}></i></a>
-                <a href='#'><i className='fab fa-facebook-f' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%'}}></i></a>
-                <a href="https://wa.me/921221130" class="whatsapp_float" target="_blank" rel="noopener noreferrer"><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%', }}></i></a>
+                <a href='https://www.instagram.com/mesc_buymore?igshid=YmMyMTA2M2Y='><i className='fab fa-instagram' style={{color:'antiquewhite', fontSize:'30px'}}></i></a>
+                <a href='https://www.facebook.com/mescbuymore/'><i className='fab fa-facebook-f' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%'}}></i></a>
+                <a href="https://wa.me/921048213" class="whatsapp_float" target="_blank" rel="noopener noreferrer"><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%', }}></i></a>
               </div>
               <ul className='footer-link' style={{marginTop:'0', padding:'0', listStyle:'none', lineHeight:'1.4', textAlign:'center'}}>
                 <Link to={'/'}><p style={{display:'inline-block', padding:'0 25px', color:'antiquewhite'}}>Home</p></Link>

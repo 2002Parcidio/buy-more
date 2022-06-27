@@ -80,11 +80,11 @@ export default function CustomizedDialogs({img1, titulo, descrição,}) {
             {descrição}
             <br />
             <br />
-            <p>Email: pasquiparcidio@gmail.com</p>
-            <p>Contactos: 921221130</p>
-            <p>Pagina no Facebook: <a href='#' style={{color:'#00FFFF'}}> BuyMore</a></p>
-            <p>Instagram:<a href='https://manutd.com' style={{color:'#00FFFF'}}> BuyMore</a></p>
-            <a href="https://wa.me/921221130" class="whatsapp_float" target="_blank" rel="noopener noreferrer" style={{marginLeft:'0px'}}><button className='btn btn-dark'><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', width:'100px', marginLeft:'2%', }}></i></button></a>
+            <p>Email: mescbuymore@gmail.com</p>
+            <p>Contactos: 921048213</p>
+            <p>Pagina no Facebook: <a href='https://www.facebook.com/mescbuymore/' style={{color:'#00FFFF'}}> BuyMore</a></p>
+            <p>Instagram:<a href='https://www.instagram.com/mesc_buymore?igshid=YmMyMTA2M2Y=' style={{color:'#00FFFF'}}> BuyMore</a></p>
+            <a href="https://wa.me/921048213" class="whatsapp_float" target="_blank" rel="noopener noreferrer" style={{marginLeft:'0px'}}><button className='btn btn-dark'><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', width:'100px', marginLeft:'2%', }}></i></button></a>
           </Typography>
         </DialogContent>
         <DialogActions>

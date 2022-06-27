@@ -5,7 +5,7 @@ const Myapp=()=>{
     function sendemail(e){
         e.preventDefault();
 
-    emailjs.sendForm('service_ff3dnma', 'template_i1tj2zc', e.target, 'kpI_-XyAKb6kTekAN')
+    emailjs.sendForm('service_fka6th4', 'template_lwefc4y', e.target, 'ezu_Pdyi_00sKq-QF')
       .then((result) => {
           alert('Mensagem enviada com sucesso');
       }, (error) => {
@@ -13,11 +13,14 @@ const Myapp=()=>{
       });
       e.target.reset();
     }
+
+    // Valores Vendas config
+
     return (
 
         <div className='container border' id="email-config" style={{width:'40%', background:'#696969'}}>
         <h1 style={{color:'antiquewhite', textAlign:'center'}}>Contact form</h1>
-        <form className='row' style={{margin:' 25px 85px 75px 100px'}} onSubmit={sendemail}>
+        <form className='row' style={{ margin:'25px'}} onSubmit={sendemail}>
             <label style={{color:'antiquewhite'}}>Nome</label>
             <input type="text" name="name" className='form-control'/>
             <label style={{color:'antiquewhite'}}>Telemóvel</label>

@@ -8,6 +8,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui;
+    background-color: #696969;
     height: 10vh;
     
     width: 100%;
@@ -51,13 +52,14 @@
 }
 .container{
   display: block;
-  
-
 }
 
 .Produto{
-  display: none;
-
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin-left: 30%;
+  margin-right: 20%;
 }
 
 .email-config1 {
@@ -65,10 +67,6 @@
 }
 
 .email-config2 {
-  display: none;
-}
-
-.Category1{
   display: none;
 }
 
@@ -151,14 +149,11 @@
     height: 150px;
   }
   
-  .container{
-    display: none;
-  }
+ .container {
+  display: block;
+ }
   
-  .Produto{
-    display: block;
-    margin-left: 25%;
-  }
+  
 
 
   #email-config {
@@ -175,12 +170,12 @@
   
   }
 
-  .Category1{
-    display: block;
-    margin-left: 25%;
-  }
   .flex{
     display: flex;
+  }
+  .compras{
+    display: block;
+
   }
  
   

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom"
 import Carousel from 'react-bootstrap/Carousel'
 import Produto from './Product';
+import Itemcard from './Itemcard';
 import { fontSize, padding } from '@mui/system';
 
 
@@ -32,6 +33,7 @@ function Home() {
                         <li><Link to={'/comprar'}>Comprar</Link></li>
                         <li><Link to={'/servicos'}>Serviços</Link></li>
                         <li><Link to={'/apoio'}>Apoio</Link></li>
+                        <li><Link to={'/carrinho'}><i class='fas fa-shopping-cart' /></Link></li>
                     </div>
                     <button className='mobile-menu-icon' onClick={() => setIsMobile(!isMobile)}>
                           {isMobile ?
@@ -41,14 +43,15 @@ function Home() {
                     </button>
             </div>
 
-          
             <br />
             <br />
-            <Carousel variant="dark" style={{}}>
+            <br />
+            <br />
+            <Carousel variant="dark">
               <Carousel.Item style={{position:''}}>
                 <img
                   className="d-block w-100"
-                  src={ require('./Img/IMG_20200425_171723_286.png')}
+                  src={ require('./Img/comprasimg.jpg')}
                   alt="First slide"
                   position='absolute'
                 />
@@ -56,26 +59,31 @@ function Home() {
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={ require('./Img/great&better.png')}
+                  src={ require('./Img/apoioimg.jpg')}
                   alt="Second slide"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src={ require('./Img/Novo-Projeto.png')}
+                  src={ require('./Img/serviçosimg.jpg')}
                   alt="Third slide"
                 />
               </Carousel.Item>
             </Carousel>
 
-          <section id='vendas&compras-home'>
-            <Link to={'/vender'}>Vender</Link>
-            <div className='vendas-home'>
-            <Link to={'/vender'}><h2>Vendas seguras</h2>
-            <p style={{color:'#23232e'}}>Aqui na BuyMore tu podes vender seus produtos de forma segura e rápida seguido de um taxa adicional dependente do produto.</p>
-            </Link>
+
+            <div className='shopcart' style={{marginTop:'2%', marginBottom:'1%'}}>
+              <Link to={'/carrinho'}><i class='fas fa-shopping-cart' style={{color:'#696969', position:'fixed', float:'right', fontSize:'40px'}}/></Link>
             </div>
+
+          <section id='vendas&compras-home'>
+            <Link to={'/vender'}>
+            <div className='vendas-home'>
+            <h2>Vendas seguras</h2>
+            <p style={{color:'#23232e'}}>Aqui na BuyMore tu podes vender seus produtos de forma segura e rápida seguido de um taxa adicional dependente do produto.</p>
+            </div>
+            </Link>
 
             <div className='compras-home'>
               <h2>Compra de confiança</h2>
@@ -83,27 +91,20 @@ function Home() {
             </div>
           </section>
 
-
         <section >
-        <div className='container mt-5 carousel' style={{position:'static'}}>
-        <Produto img1={ require('./Img/IMG-20220424-WA0009.jpg')} titulo='Samsung A12' descrição='Impress your girl with this, is simple that' valor='47.000,00'/>
-        <br />
-        <Produto img1={ require('./Img/transferir2.jpeg')} titulo='Iphone 3' descrição='A great cellphone to talk with her, yeah you know very well ...' valor='50.000,00'/>
-        <br />
-        <Produto img1={ require('./Img/images.jpeg')} titulo='Nokia S11' descrição='Impress your girl with this, is simple that' valor='324.999,00'/>
-        <br />
-        <Produto img1={ require('./Img/transferir2.jpeg')} titulo='Iphone 3' descrição='A great cellphone to talk with her, yeah you know very well ... ' valor='50.000,00'/>
-        </div>
+          <h2 style={{fontSize:'50px'}}>EM DESTAQUE</h2>
 
-        <div className='Produto'>
-          
-        <Produto img1={ require('./Img/IMG-20220424-WA0009.jpg')} titulo='Samsung A12' descrição='Impress your girl with this, is simple that' valor='47.000,00'/>
+        <div className='py-4 container'>
+          <div className='row justify-content-center'>
+
+        <Itemcard img1={ require('./Img/wallet.jpg')} titulo='Carteira' descrição='Impress your girl with this, is simple that' price='47.000,00' />
         <br />
-        <Produto img1={ require('./Img/transferir2.jpeg')} titulo='Iphone 3' descrição='A great cellphone to talk with her, yeah you know very well ...' valor='50.000,00'/>
+        <Itemcard img1={ require('./Img/fatoazul.jpg')} titulo='Fato Azul' descrição='A great cellphone to talk with her, yeah you know very well ...' price='50.000,00'/>
         <br />
-        <Produto img1={ require('./Img/images.jpeg')} titulo='Nokia S11' descrição='Impress your girl with this, is simple that' valor='324.999,00'/>
+        <Itemcard img1={ require('./Img/car.jpg')} titulo='Elantra SE Novinho' descrição='Impress your girl with this, is simple that' price='324.999,00' />
         <br />
-        <Produto img1={ require('./Img/transferir2.jpeg')} titulo='Iphone 3' descrição='A great cellphone to talk with her, yeah you know very well ... ' valor='50.000,00'/>
+        <Itemcard img1={ require('./Img/backpack.jpg')} titulo='Mochila com Carregador USB' descrição='Carrega o seu celular quando não estiver em casa com esta mochila ... ' price='50.000,00'/>
+        </div>
         </div>
 
       
@@ -114,9 +115,9 @@ function Home() {
         
         <section className='footer' style={{background:'#696969', padding:'40px 0', height:'100%'}}>
           <div className='social' style={{textAlign:'center', paddingBottom:'25px', color:'antiquewhite'}}>
-            <a href='#'><i className='fab fa-instagram' style={{color:'antiquewhite', fontSize:'30px'}}></i></a>
-            <a href='#'><i className='fab fa-facebook-f' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%'}}></i></a>
-            <a href="https://wa.me/921221130" class="whatsapp_float" target="_blank" rel="noopener noreferrer"><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%', }}></i></a>
+            <a href='https://www.instagram.com/mesc_buymore?igshid=YmMyMTA2M2Y='><i className='fab fa-instagram' style={{color:'antiquewhite', fontSize:'30px'}}></i></a>
+            <a href='https://www.facebook.com/mescbuymore/'><i className='fab fa-facebook-f' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%'}}></i></a>
+            <a href="https://wa.me/921048213" class="whatsapp_float" target="_blank" rel="noopener noreferrer"><i className='fab fa-whatsapp' style={{color:'antiquewhite', fontSize:'30px', marginLeft:'2%', }}></i></a>
           </div>
           <ul className='footer-link' style={{marginTop:'0', padding:'0', listStyle:'none', lineHeight:'1.4', textAlign:'center'}}>
             <Link to={'/'}><p style={{display:'inline-block', padding:'0 25px', color:'antiquewhite'}}>Home</p></Link>
@@ -132,4 +133,5 @@ function Home() {
             </div>
     );
 }
+
 export default Home;
